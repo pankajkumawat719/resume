@@ -1,1 +1,398 @@
-<h1> This Pankj </h1>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pankaj Kumawat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%]">
+      <img src="./assets/header-bg-color-qhDAKJlo.png" class="w-full" alt="" />
+    </div>
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <!--  name logo -->
+      <img
+        src="./assets/e79fe7e0-a4ee-4119-9934-e4867c0ae883.png"
+        alt="logo"
+        class="w-28 cursor-pointer mr-14 scale-"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
+      >
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+      <div class="flex items-center gap-8">
+        <button><img src="./assets/moon.png" alt="" class="w-6" /></button>
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4-"
+          >Contact <img src="./assets/arrow-icon.png" alt="" class="w-3"
+        /></a>
+
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./assets/menu.png" alt="" class="w-6" />
+        </button>
+      </div>
+
+      <!-- for mobile menu -->
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4"
+      >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img src="./assets/close.png" alt="" class="w-5 cursor-pointer" />
+        </div>
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li><a href="#services" onclick="closeMenu()">Service</a></li>
+        <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img src="./assets/myimg.jpeg" class="rounded-full w-32" alt="" />
+      <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
+        Hi! I am Pankaj Kumawat <img src="" class="w-6" alt="" />
+      </h3>
+      <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Full Stack Developer</h1>
+      <p class="max-w-2xl mx-auto">
+        Innovative and Highly skilled java Full Stack Developer with a Solid
+        Foundation in computer science. Proficient in leveraging cutting-edge
+        technologies to build dynamic, high-performance application Adept at
+        translating complex requirements into robust scalable solutions, with
+        hands-on project experience and deep understanding of java principles
+        and database management
+      </p>
+      <!-- contact and resume -->
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <!-- contact -->
+        <a
+          href="#contact"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
+          >Contect me <img src="./assets/aerotoright.png" class="w-4" />
+        </a>
+
+        <!-- resume -->
+        <a
+          href="./assets/Pankaj_Kumawat_Resume.pdf"
+          download
+          class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white"
+          >My Resume <img src="./assets/downloadicon.png" class="w-4" />
+        </a>
+      </div>
+    </div>
+
+    <!-- about me -->
+
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg">Introduction</h4>
+      <h2 class="text-center text-5xl">About me</h2>
+
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="./assets/myimg.jpeg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
+          />
+          <!-- circle on image -->
+          <div
+            class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center"
+          >
+            <img src="./assets/full-stack.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <div class="flex-1">
+          <p class="mb-10 max-w-2xl">
+            I am a dedicated Full Stack Developer with hands-on experience in
+            creating scalable solutions. I have developed dynamic applications
+            and enhanced system performance through my internship and projects,
+            contributing effectively to successful and impactful software
+            solutions.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-2xl">
+            <!-- tools -->
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./assets/code-icon.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-700">langauges</h3>
+              <p class="text-gray-600 text-sm">
+                Java, JavaScript, HTML, CSS, React js, MySQL, Spring Framework
+              </p>
+            </li>
+
+            <!-- education -->
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./assets/education.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+              <p class="text-gray-600 text-sm">B.Tech in Computer Science</p>
+            </li>
+
+            <!-- project -->
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./assets/bag.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+              <p class="text-gray-600 text-sm">
+                Built more than 5 projects <projects class=""></projects>
+              </p>
+            </li>
+          </ul>
+          <!-- tool i use and ther list -->
+          <h4 class="my-3 text-gray-700">Tolls i Use</h4>
+          <ul class="flex items-center gap-3 sm:gap-5">
+            <!-- vs code -->
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img src="./assets/vs.png" class="w-5 sm:w-7" alt="" />
+            </li>
+            <!-- github -->
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img src="./assets/github.png" class="w-5 sm:w-7" alt="" />
+            </li>
+            <!-- leetcode -->
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img src="./assets/leetcode.png" class="w-5 sm:w-7" alt="" />
+            </li>
+            <!-- Spring suit -->
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img src="./assets/springsuit.png" class="w-5 sm:w-7" alt="" />
+            </li>
+            <!-- intlijj -->
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img src="./assets/IntelliJ-IDEA.svg" class="w-5 sm:w-7" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services" class="w-full px-[12%] py-10 scroll-my-20">
+      <h4 class="text-center mb-2 text-lg">What i Offer</h4>
+      <h2 class="text-center text-5xl">My Services</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Custom software development, full stack solutions, system optimization,
+        and project consultation. I build dynamic applications, enhance
+        performance, and provide ongoing support to ensure your projects run
+        smoothly and effectively meet your needs.
+      </p>
+      <!-- my cards -->
+
+      <div class="grid grid-cols-4 gap-6 my-10">
+        <!-- web -->
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="./assets/webdesign.png" class="w-10" alt="" />
+          <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
+          <p class="text-sm text-gray-600 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            facere fugiat numquam sint neque molestiae.
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >Read more
+            <img src="./assets/right.png" alt="aero image 1" class="w-4"
+          /></a>
+        </div>
+        <!-- Frontend -->
+
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="" class="w-10" alt="" />
+          <h3 class="text-lg my-4 text-gray-700">Frontend Development</h3>
+          <p class="text-sm text-gray-600 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            facere fugiat numquam sint neque molestiae.
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >Read more <img src="" alt="aero image" class="w-4"
+          /></a>
+        </div>
+        <!-- backend -->
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="" class="w-10" alt="" />
+          <h3 class="text-lg my-4 text-gray-700">Backend Development</h3>
+          <p class="text-sm text-gray-600 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            facere fugiat numquam sint neque molestiae.
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >Read more <img src="" alt="aero image" class="w-4"
+          /></a>
+        </div>
+        <!-- developer -->
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="" class="w-10" alt="" />
+          <h3 class="text-lg my-4 text-gray-700">Frontend Development</h3>
+          <p class="text-sm text-gray-600 leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            facere fugiat numquam sint neque molestiae.
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >Read more <img src="" alt="aero image" class="w-4"
+          /></a>
+        </div>
+      </div>
+      <!-- my cards  end-->
+    </div>
+    <!-- my work -->
+    <div id="work" class="w-full px-[12%] py-10 scroll-my-20">
+      <h4 class="text-center mb-2 text-lg">My portfolli</h4>
+      <h2 class="text-center text-5xl">My latest work</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Created scalable applications and enhanced user experience, optimizing
+        both front-end and back-end functionalities.
+      </p>
+
+      <!-- my work -->
+      <div class="grid grid-cols-4 my-10 gap-5">
+        <!-- weather  -->
+        <div
+          class="aspect-square bg-[url('./assets/weather.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+        >
+          <div
+            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-3 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
+            <div>
+              <h2 class="font-semibold">Frontend</h2>
+              <p class="text-[10px] text-gray-700">Web Development</p>
+            </div>
+            <div
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+            >
+              <img src="./assets/sendicon.png" class="w-5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ems -->
+        <div
+          class="aspect-square bg-[url('./assets/ems1.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+        >
+          <div
+            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-3 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
+            <div>
+              <h2 class="font-semibold">Full Stack</h2>
+              <p class="text-[10px] text-gray-700">Web Development</p>
+            </div>
+            <div
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+            >
+              <img src="./assets/sendicon.png" class="w-5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- e-commerce -->
+        <div
+          class="aspect-square bg-[url('./assets/e-commerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+        >
+          <div
+            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-3 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
+            <div>
+              <h2 class="font-semibold">Full Stack</h2>
+              <p class="text-[10px] text-gray-700">Web Development</p>
+            </div>
+            <div
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+            >
+              <img src="./assets/sendicon.png" class="w-5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- follio -->
+        <div
+          class="aspect-square bg-[url('./assets/portfolio.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+        >
+          <div
+            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-3 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
+            <div>
+              <h2 class="font-semibold">Frontend</h2>
+              <p class="text-[10px] text-gray-700">Web Development</p>
+            </div>
+            <div
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+            >
+              <img src="./assets/sendicon.png" class="w-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- my work end-->
+      <a
+        href="#"
+        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 my-20 mx-auto hover:bg-[#fcf4ff] duration-500"
+        >Show More <img src="./assets/right.png" class="w-4" alt=""
+      /></a>
+    </div>
+
+    <!-- contact  -->
+    <div
+      id="contact"
+      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')] bg-no-repeat bg-[length:90%_auto] bg-center"
+    >
+      <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+      <h2 class="text-center text-5xl">Get in touch</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        If you have any questions, comments or feedback, please use the form
+        below.
+      </p>
+
+      <form action="" class="max-w-2xl mx-auto">
+        <div class="flex gap-5">
+          <input
+            type="text"
+            placeholder="Enter your Name "
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name=""
+            id=""
+          />
+          <input
+            type="text"
+            placeholder="Enter your Email "
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name=""
+            id=""
+          />
+        </div>
+      </form>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
