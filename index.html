@@ -6,34 +6,48 @@
     <title>Pankaj Kumawat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="overflow-x-hidden">
-    
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%]">
+  <body class="overflow-x-hidden leading-8 dark:bg-black dark:text-white">
+    <!--  color gradient -->
+    <div
+      class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%] dark:hidden"
+    >
       <img src="./assets/header-bg-color-qhDAKJlo.png" class="w-full" alt="" />
     </div>
     <nav
-    
       class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
     >
-
       <!--  name logo -->
-      <img
+      <!-- <img
         src="./assets/e79fe7e0-a4ee-4119-9934-e4867c0ae883.png"
         alt="logo"
         class="w-28 cursor-pointer mr-14 scale-"
-      />
+      /> -->
+      <div class="">Pankaj Kumawat</div>
       <ul
         class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
       >
-        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#home">Home</a>
+          <div
+            class="h-1 w-full bg-blue-600 scale-x-0 hover:scale-x-100 transition-transform origin-left mt-1"
+          ></div>
+        </li>
         <li><a href="#about">About me</a></li>
         <li><a href="#services">Service</a></li>
         <li><a href="#work">My Work</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
       <div class="flex items-center gap-8">
-        <button><img src="./assets/moon.png" alt="" class="w-6" /></button>
+        <button onclick="toggleTheme()">
+          <img src="./assets/moon.png" alt="" class="w-6" />
+        </button>
         <a
           href="#contact"
           class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4-"
@@ -64,7 +78,11 @@
     <!-- Header -->
     <div
       class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
-    >    <h1 class="font-black text-4xl">Currently revamping! My portfolio will be back soon with exciting updates.</h1>
+    >
+      <h1 class="font-black text-4xl">
+        Currently revamping! My portfolio will be back soon with exciting
+        updates.
+      </h1>
       <img src="./assets/myimg.jpeg" class="rounded-full w-32" alt="" />
       <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
         Hi! I am Pankaj Kumawat <img src="" class="w-6" alt="" />
@@ -377,25 +395,75 @@
         below.
       </p>
 
-      <form action="" class="max-w-2xl mx-auto">
-        <div class="flex gap-5">
+      <form
+        method="post"
+        action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="dff843b8-dcb1-4415-90af-fadf12d36f79"
+        />
+        <div class="grid grid-cols-auto gap-6 my-10 mb-8">
           <input
             type="text"
             placeholder="Enter your Name "
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
-            name=""
+            name="name"
             id=""
+            required
           />
           <input
-            type="text"
+            type="email"
             placeholder="Enter your Email "
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
-            name=""
+            name="email"
             id=""
+            required
           />
         </div>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Enter Your Message"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          required
+        ></textarea>
+        <button
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+        >
+          Submit
+        </button>
       </form>
     </div>
+    <!-- footer ------------------------------ -->
+
+    <div class="mt-20">
+      <div class="text-center">
+        <img src="" class="w-36 mx-auto mb-2" alt="" />
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <img
+            src="./assets/email.png"
+            class="w-6"
+            alt=""
+          />kumawatpankaj719@gmail.com
+        </div>
+      </div>
+      <div
+        class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+      >
+        <p>© 2024 Pankaj Kumawat. All rights reserved.</p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+          <li>
+            <a href="https://www.linkedin.com/in/pankajkumawat719/">Linkedin</a>
+          </li>
+          <li><a href="https://github.com/pankajkumawat719">github</a></li>
+          <li><a href="https://x.com/pankajk719">X</a></li>
+        </ul>
+      </div>
+    </div>
+
     <script src="Script.js"></script>
   </body>
 </html>
